@@ -1,0 +1,37 @@
+[user]
+  name = Mike AbiEzzi
+  email = mjezzi@gmail.com
+[github]
+  user = mjezzi
+[alias]
+  st     = status
+  ci     = commit
+  ca     = commit --amend -C HEAD
+  co     = checkout
+  b      = branch
+  cob    = checkout -b
+  dc     = diff --cached
+  df     = diff --word-diff=color
+  cp     = cherry-pick
+  aa     = !git add -u && git add . && git status
+  up     = !git fetch origin && git rebase origin/master
+  ir     = !git rebase -i origin/master
+  done   = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
+  heroku = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push && git push heroku master
+  lg     = log --pretty=format:'%C(yellow)%h%C(reset) | %an | %ai (%ar) | %C(cyan)%s%C(reset)%d' --topo-order --graph --decorate
+[core]
+  excludesfile = /Users/mike/.gitignore
+[color]
+  ui = true
+  diff = true
+[color "diff"]
+  new = green bold
+  old = red bold
+[color "status"]
+  added = green bold
+  changed = yellow
+  untracked = white bold
+[credential]
+  helper = osxkeychain
+[push]
+  default = simple
