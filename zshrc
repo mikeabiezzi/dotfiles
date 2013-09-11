@@ -9,7 +9,7 @@ plugins=(osx)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin
 
 eval "$(rbenv init -)"
 
