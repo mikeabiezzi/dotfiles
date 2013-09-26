@@ -11,7 +11,7 @@
   b      = branch
   cob    = checkout -b
   dc     = diff --cached
-  df     = diff --word-diff=color
+  dif    = diff --word-diff=color
   cp     = cherry-pick
   aa     = !git add -u && git add . && git status
   up     = !git fetch origin && git rebase origin/master
