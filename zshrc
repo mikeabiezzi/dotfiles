@@ -14,3 +14,5 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bi
 eval "$(rbenv init -)"
 
 alias b='bundle exec'
+
+export ANDROID_HOME=.android-adt-bundle/adt-bundle-mac-x86_64-20131030
