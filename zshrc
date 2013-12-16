@@ -15,4 +15,4 @@ eval "$(rbenv init -)"
 
 alias b='bundle exec'
 
-export ANDROID_HOME=.android-adt-bundle/adt-bundle-mac-x86_64-20131030
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/22.0.5
