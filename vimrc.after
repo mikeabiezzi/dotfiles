@@ -2,7 +2,7 @@
 color desert
 
 " font size
-set gfn=Menlo:h12
+set gfn=Menlo:h14
 
 " color margin
 let &colorcolumn=join(range(81,999),",")
