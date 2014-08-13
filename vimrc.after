@@ -1,12 +1,13 @@
 " color theme
 color desert
+colorscheme desert256
 
 " font size
 set gfn=Menlo:h14
 
 " color margin
 let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
+hi ColorColumn guibg=#2c2d27 ctermbg=235
 let &colorcolumn="80,".join(range(120,999),",")
 
 " ctrlp ignore -including vendor/bundle
@@ -14,3 +15,5 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v(\.(git|hg|svn)$)|vendor\/bundle',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+hi Search ctermbg=Yellow ctermfg=Black
