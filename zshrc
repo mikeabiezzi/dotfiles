@@ -14,6 +14,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/lo
 eval "$(rbenv init -)"
 
 alias b='bundle exec'
+alias fs='foreman start'
 
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/22.0.5
 
