@@ -1,13 +1,19 @@
 " color theme
-color desert
-colorscheme desert256
+if has("gui_running")
+  color desert
+else
+  colorscheme desert256
+endif
+
+hi Normal ctermbg=234 guibg=#262625
+hi NonText ctermbg=236
 
 " font size
 set gfn=Menlo:h14
 
 " color margin
 let &colorcolumn=join(range(81,999),",")
-hi ColorColumn guibg=#2c2d27 ctermbg=235
+hi colorcolumn guibg=#1d1d1d ctermbg=233
 let &colorcolumn="80,".join(range(120,999),",")
 
 " ctrlp ignore -including vendor/bundle
