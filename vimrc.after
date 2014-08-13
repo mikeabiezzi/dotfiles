@@ -17,3 +17,5 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 hi Search ctermbg=Yellow ctermfg=Black
+
+map <leader>r :NERDTreeFind<cr>
