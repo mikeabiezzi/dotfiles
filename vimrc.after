@@ -25,3 +25,14 @@ let g:ctrlp_custom_ignore = {
 hi Search ctermbg=Yellow ctermfg=Black
 
 map <leader>r :NERDTreeFind<cr>
+
+highlight linenr ctermbg=234 guifg=#696A6F
+autocmd BufEnter *.*      highlight linenr ctermbg=234 guibg=#262625
+autocmd BufEnter *.coffee highlight linenr ctermbg=17  guibg=#1A2653
+autocmd BufEnter *.js     highlight linenr ctermbg=17  guibg=#1A2653
+autocmd BufEnter *.scss   highlight linenr ctermbg=174 guibg=#581045
+autocmd BufEnter *.css    highlight linenr ctermbg=174 guibg=#581045
+autocmd BufEnter *.html   highlight linenr ctermbg=58  guibg=#3E3905
+autocmd BufEnter *.hbs    highlight linenr ctermbg=58  guibg=#3E3905
+autocmd BufEnter *.haml   highlight linenr ctermbg=58  guibg=#3E3905
+autocmd BufEnter *.rb     highlight linenr ctermbg=52  guibg=#5B0C0C
