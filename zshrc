@@ -21,3 +21,4 @@ export ANDROID_HOME=/usr/local/Cellar/android-sdk/22.0.5
 export EDITOR=vim
 export PGDATA=/usr/local/var/postgres
 export NODE_PATH="/usr/local/lib/node"
+export CC=/usr/bin/gcc
