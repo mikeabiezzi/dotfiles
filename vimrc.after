@@ -36,3 +36,8 @@ autocmd BufEnter *.html   highlight linenr ctermbg=58  guibg=#3E3905
 autocmd BufEnter *.hbs    highlight linenr ctermbg=58  guibg=#3E3905
 autocmd BufEnter *.haml   highlight linenr ctermbg=58  guibg=#3E3905
 autocmd BufEnter *.rb     highlight linenr ctermbg=52  guibg=#5B0C0C
+
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
