@@ -1,6 +1,6 @@
 [user]
-  name = Mike AbiEzzi
-  email = mjezzi@gmail.com
+	name = Mike AbiEzzi
+	email = mikeabiezzi@gmail.com
 [github]
   user = mjezzi
 [alias]
@@ -35,3 +35,8 @@
   helper = osxkeychain
 [push]
   default = simple
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
