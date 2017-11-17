@@ -12,9 +12,8 @@ hi NonText ctermbg=236
 set gfn=Menlo:h14
 
 " color margin
-let &colorcolumn=join(range(81,999),",")
 hi colorcolumn guibg=#1d1d1d ctermbg=233
-let &colorcolumn="80,".join(range(120,999),",")
+let &colorcolumn="81,121"
 
 " ctrlp ignore -including vendor/bundle
 let g:ctrlp_custom_ignore = {
