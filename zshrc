@@ -3,6 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 export UPDATE_ZSH_DAYS=120
+HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(osx git git-extras github nvm redis-cli rbenv rake-fast heroku gulp github)
 
