@@ -22,6 +22,8 @@ export EDITOR=vim
 export PGDATA=/usr/local/var/postgres
 export NODE_PATH="/usr/local/lib/node"
 export CC=/usr/bin/gcc
+export LIBCURL_CFLAGS=-I/usr/local/opt/curl/include
+export LIBCURL_LIBS=-L/usr/local/opt/curl/lib
 function kil() {
   ps aux | grep -ie $1 | awk '{print $2}' | xargs kill -9
 }
