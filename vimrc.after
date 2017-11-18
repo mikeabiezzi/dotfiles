@@ -51,3 +51,5 @@ set clipboard=unnamed
 xnoremap p pgvy
 
 nnoremap <Leader>f :Ack!<Space>
+
+source ~/.dotfiles/vim/watch_for_changes.vim
