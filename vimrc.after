@@ -54,5 +54,7 @@ set clipboard=unnamed
 xnoremap p pgvy
 
 nnoremap <Leader>f :Ack!<Space>
+command Snake :s#\(\<\u\l\+\|\l\+\)\(\u\)#\l\1_\l\2#g
+command Camel :s#\(\%(\<\l\+\)\%(_\)\@=\)\|_\(\l\)#\u\1\2#g
 
 source ~/.dotfiles/vim/watch_for_changes.vim
