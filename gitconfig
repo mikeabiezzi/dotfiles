@@ -19,6 +19,7 @@
   done   = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
   heroku = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push && git push heroku master
   lg     = log --pretty=format:'%C(yellow)%h%C(reset) | %an | %ai (%ar) | %C(cyan)%s%C(reset)%d' --topo-order --graph --decorate
+  recent = !git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ print $3 }' | awk ' !x[$0]++' | head -n 10
 [core]
   excludesfile = /Users/mike/.gitignore
 [color]
