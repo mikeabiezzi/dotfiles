@@ -7,6 +7,7 @@ endif
 
 hi Normal ctermbg=234 guibg=#262625
 hi NonText ctermbg=236
+hi SpellBad ctermfg=black
 
 " font size
 set gfn=Menlo:h14
@@ -25,7 +26,7 @@ hi Search ctermbg=Yellow ctermfg=Black
 
 map <leader>r :NERDTreeFind<cr>
 
-highlight linenr ctermbg=234 guifg=#696A6F
+hi linenr ctermbg=234 guifg=#696A6F
 autocmd BufEnter *.*      highlight linenr ctermbg=234 guibg=#262625
 autocmd BufEnter *.coffee highlight linenr ctermbg=17  guibg=#1A2653
 autocmd BufEnter *.js     highlight linenr ctermbg=17  guibg=#1A2653
