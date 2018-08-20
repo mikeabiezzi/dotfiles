@@ -18,7 +18,7 @@ let &colorcolumn="81,121"
 
 " ctrlp ignore -including vendor/bundle
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v(\.(git|hg|svn)$)|vendor\/bundle|node_modules|dist',
+  \ 'dir':  '\v(\.(git|hg|svn)$)|vendor\/bundle|node_modules|dist|bin',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
 
