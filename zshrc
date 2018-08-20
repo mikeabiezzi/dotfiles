@@ -35,3 +35,49 @@ eval "$(rbenv init -)"
 function kil() {
   ps aux | grep -ie $1 | awk '{print $2}' | xargs kill -9
 }
+
+# docker
+
+dkill(){
+  echo "Killing all docker containers..."
+  docker kill $(docker ps --quiet)
+}
+
+dstop(){
+  echo "Stopping all docker containers..."
+  docker stop $(docker ps --all --quiet)
+}
+
+drm(){
+  echo "Removing all stopped containers..."
+  docker rm $(docker ps --all --quiet --filter status=exited)
+  docker rm $(docker ps --all --quiet --filter status=created)
+}
+
+drmi(){
+  echo "Removing all untagged images:"
+  docker rmi $(docker images --quiet --filter dangling=true)
+}
+
+dclean() {
+  echo "Removing stopped containers and removing untagged images..."
+  docker rm $(docker ps --all --quiet --filter status=created)
+  docker rm $(docker ps --all --quiet --filter status=exited)
+  docker rmi $(docker images --quiet --filter dangling=true)
+}
+
+dmu() {
+  eval "$(docker-machine env $1)"
+}
+
+dms() {
+  eval "$(docker-machine env --swarm $1)"
+}
+
+debug_ci() {
+  local project=$1
+  local image="registry.nexiabuild.com/$project-ci"
+
+  docker run -ti --rm --env ID_RSA_KEY="$(cat ~/.ssh/id_rsa)" $image bash
+}
+
